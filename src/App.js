@@ -4,6 +4,7 @@ import Home from './views/Home'
 import Detail from './views/Detail'
 import Chapter from './views/Chapter'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
+      <br/>
       <div className="content">
         <Router>
           <Switch>
@@ -20,6 +22,7 @@ function App() {
           </Switch>
         </Router>
       </div>
+      <Footer/>
     </div>
   );
 }
