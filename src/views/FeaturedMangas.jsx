@@ -1,8 +1,8 @@
-import React, { Component, useState } from 'react'
+import React from 'react'
 import Card from '../components/Card'
 import mangas from '../featuredMangas'
 
-export default function Home() {
+export default function FeaturedMangas() {
 
     return (
         <div className="container">

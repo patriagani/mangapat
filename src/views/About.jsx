@@ -1,8 +1,8 @@
-import React, { Component, useState } from 'react'
+import React from 'react'
 import Featured from '../components/Featured'
 import featuredMangas from '../featuredMangas'
 
-export default function Home() {
+export default function About() {
 
     return (
         <div className="container">

@@ -1,35 +1,49 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
+import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom'
 
-export default function Navbar() {
+
+export default function Navbar(props) {
+    let history = useHistory()
+    const [search, setSearch] = useState("")
+
+    function handleSearchChange(event) {
+        setSearch(event.target.value)
+    }
+
+    function goSearch(event) {
+        event.preventDefault();
+        history.push(`/search?keyword=${search}`)
+    }
+
     return (
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a className="navbar-brand">
                 <img src="mangapatavatar.png" width="30" height="30" alt=""/>
             </a>
-            <a class="navbar-brand">MangaPat</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a className="navbar-brand">MangaPat</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <Link class="nav-link" to="/">Home</Link>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav mr-auto">
+                    <li className="nav-item active">
+                        <Link className="nav-link" to="/">Home</Link>
                     </li>
-                    <li class="nav-item active">
-                        <Link class="nav-link" to="/about">About</Link>
+                    <li className="nav-item active">
+                        <Link className="nav-link" to="/about">About</Link>
                     </li>
-                    <li class="nav-item active">
-                        <Link class="nav-link" to="/featured-mangas">Featured Manga</Link>
+                    <li className="nav-item active">
+                        <Link className="nav-link" to="/featured-mangas">Featured Manga</Link>
                     </li>
-                    <li class="nav-item active">
-                        <Link class="nav-link" to="privacy-policy">Privacy Policy</Link>
+                    <li className="nav-item active">
+                        <Link className="nav-link" to="privacy-policy">Privacy Policy</Link>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-success my-2 my-sm-0" style={{color: "white"}} type="submit">Search</button>
+                <form className="form-inline my-2 my-lg-0" onSubmit={goSearch}>
+                    <input className="form-control mr-sm-2" type="search" onChange={handleSearchChange} placeholder="Search" aria-label="Search"/>
+                    <button className="btn btn-outline-success my-2 my-sm-0" style={{color: "white"}} type="submit">Search</button>
                 </form>
             </div>
         </nav>

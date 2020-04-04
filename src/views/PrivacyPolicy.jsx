@@ -1,11 +1,9 @@
-import React, { Component, useState } from 'react'
-import Card from '../components/Card'
+import React from 'react'
 import Featured from '../components/Featured'
 import Welcome from '../components/Welcome'
-import mangas from '../mangas'
 import featuredMangas from '../featuredMangas'
 
-export default function Home() {
+export default function PrivacyPolicy() {
 
     return (
         <div className="container">

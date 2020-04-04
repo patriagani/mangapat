@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
@@ -22,11 +22,11 @@ export default function Detail(props) {
 
     return (
         <div className="container" style={{paddingTop: 80}}>
-            {loading ? <h3>Please Wait...</h3> : 
+            {loading ? <h3 style={{paddingBottom: 500}}>Please Wait...</h3> : 
             <>
             <div className="row">
                 <div className="col-sm text-center">
-                    <img src={`https://cdn.mangaeden.com/mangasimg/${manga.image}`} alt=""/>
+                    <img src={`https://cdn.mangaeden.com/mangasimg/${manga.image}`} onError={(e)=>{e.target.onerror = null; e.target.src="https://cdn.mangaeden.com/images/no_image.svg"}} alt=""/>
                     <br/><br/>
                     <h3>{manga.title}</h3>
                 </div>

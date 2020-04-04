@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React from 'react'
 import Card from '../components/Card'
 import Featured from '../components/Featured'
 import Welcome from '../components/Welcome'

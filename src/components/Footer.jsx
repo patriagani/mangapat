@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default function Card(props) {
-    const {manga} = props
+export default function Card() {
 
     return (
         <footer style={{marginTop: 20}} className="page-footer font-small bg-primary">
