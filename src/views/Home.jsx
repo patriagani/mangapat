@@ -17,7 +17,6 @@ export default function Home() {
                 </div>
                 <div className="col-4">
                     <Welcome/>
-                    <br/>
                     <Featured mangas={featuredMangas}/>
                 </div>
             </div>

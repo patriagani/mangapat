@@ -24,9 +24,6 @@ export default function Featured(props) {
                     </>    
                 )}
             </div>
-            <div className="card-footer text-white bg-primary">
-                Picked by PatriaGani
-            </div>
         </div>
     )
 }

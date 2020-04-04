@@ -235,24 +235,23 @@ const mangas = [
         s: 2,
         t: "Naruto"
     },
-
     {
-        a: "boruto-naruto-next-generations",
-        c: [
-            "Action",
-            "Adventure",
-            "Comedy",
-            "Drama",
-            "Fantasy",
-            "Shounen"
-        ],
-        h: 982514,
-        i: "5754a49e719a1641fd988b6d",
-        im: "a6/a6cb9ecfe372e142bf15a33aaa7bd37fcf907ec5a01c3ccd230ad53b.jpg",
-        ld: 1584762088,
-        s: 1,
-        t: "Boruto: Naruto Next Generations"
-    },
+        "a": "the-law-of-ueki", 
+        "c": [
+          "Action", 
+          "Adventure", 
+          "Comedy", 
+          "School Life", 
+          "Shounen", 
+          "Supernatural"
+        ], 
+        "h": 4940, 
+        "i": "5bb3f08f719a167f27751322", 
+        "im": "df/df9a8a1c4d0f34dd2768522e9b066229b994780719fafdba5bf6432e.png", 
+        "ld": 1538630912.0, 
+        "s": 2, 
+        "t": "The Law of Ueki"
+    }, 
     {
         a: "slam-dunk",
         c: [
