@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
                 <p class="text-center p-3 mb-2 bg-dark text-white">We apologize because currently Mangeden API has been deactivated, so that until now we have not been able to make this website function as usual</p>
             </div>
             <div className="row">
-                <div className="col-8">
+                <div className="col-md-8">
                     <br/>
                     <h3>Privacy Policy for MangaPat</h3>
                     <br/>
@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
 
                     <p>MangaPat does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
                 </div>
-                <div className="col-4">
+                <div className="col-md-4">
                     <Welcome/>
                     <Featured mangas={featuredMangas}/>
                 </div>

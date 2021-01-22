@@ -10,7 +10,7 @@ export default function About() {
                 <p class="text-center p-3 mb-2 bg-dark text-white">We apologize because currently Mangeden API has been deactivated, so that until now we have not been able to make this website function as usual</p>
             </div>
             <div className="row">
-                <div className="col-8 text-center">
+                <div className="col-md-8 text-center">
                     <br/>
                     <h4>Welcome to MangaPat</h4>
                     <br/>
@@ -20,7 +20,7 @@ export default function About() {
                     <br/>
                     <p class="card-text text-justify" style={{padding: 20}}>MangaPat is one of the best sources where readers can read online for free high-quality manga from leading publishers. Readers can read online manga chapters from a wide range of classic genres, summaries, manga art-books, and popular fiction and non-fiction manga-titles. MangaPat created by using <a href="https://www.mangaeden.com/api/">Mangaeden API</a></p>
                 </div>
-                <div className="col-4">
+                <div className="col-md-4">
                     <Featured mangas={featuredMangas}/>
                 </div>
             </div>
