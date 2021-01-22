@@ -7,6 +7,9 @@ export default function PrivacyPolicy() {
 
     return (
         <div className="container">
+            <div className="row" style={{display: "flex", justifyContent: "center"}}>
+                <p class="text-center p-3 mb-2 bg-dark text-white">We apologize because currently Mangeden API has been deactivated, so that until now we have not been able to make this website function as usual</p>
+            </div>
             <div className="row">
                 <div className="col-8">
                     <br/>

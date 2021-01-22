@@ -6,6 +6,7 @@ export default function Detail(props) {
 
     const [manga, setManga] = useState({})
     const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(false)
     const {mangaId} = props.match.params
 
     useEffect(() => {
@@ -16,13 +17,16 @@ export default function Detail(props) {
                 setLoading(false)
             })
             .catch((error) => {
+                setError(true)
                 console.log(error.message)
             })
     }, [mangaId])
 
     return (
         <div className="container" style={{paddingTop: 80}}>
-            {loading ? <h3 style={{paddingBottom: 500}}>Please Wait...</h3> : 
+            {error && <h4 class="text-center p-3 mb-2 bg-danger text-white">We apologize because currently Mangeden API has been deactivated, so that until now we have not been able to make this website function as usual</h4>}
+            <br/>
+            {loading ? <p style={{paddingBottom: 500}}>We will look for replacement Mangaeden API and try to fix it :)</p> : 
             <>
             <div className="row">
                 <div className="col-sm text-center">
